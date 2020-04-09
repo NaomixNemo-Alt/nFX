@@ -1,0 +1,17 @@
+{
+    "folderNames": {
+        "srcFolder": "src",
+        "pkgFolder": "pkg",
+        "nFXFolder": "nFX"
+    }, "blacklist": [{
+        "name": "node_modules",
+        "description": "Blacklist node module folder from being loaded",
+        "useRegExp": true,
+        "value": "/node\\_modules/i"
+    }, {
+        "name": "Outside",
+        "description": "Please manually set this to the folder outside your project (if there is one) to prevent accidentally granting this package access to the entire file system.",
+        "useRegExp": true,
+        "value": "/app/"
+    }]
+}
