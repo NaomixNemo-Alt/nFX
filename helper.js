@@ -7,6 +7,6 @@ exports.lib = {
         path: require ("./lib/func/path.js"),
         typeof: require ("./lib/func/typeof.js")
     }
-}; exports.node_modules = {
+}; exports.modules = {
     fs: require ("fs"), filesize: require ("filesize")
 };
