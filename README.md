@@ -1,4 +1,5 @@
 # nFX
+[Questions](https://github.com/NaomixNemo/nFX/tree/alpha#questions)
 
 ## Questions
 ### What is this?
@@ -25,7 +26,7 @@ Try to keep it at the latest version if possible, if it's not please open up an 
 You're not meant to modify it. If you want to, you're at risk of all your changes being replaced by updates and / or your changes being incompatable with future versions of the code.\
 If you can understand it, you can probably also understand that messing with about any of the code can mess up the entire package.
 
-### How do I even use this??
+## How to use nFX
 - Download the latest release of nFX.zip
 - Extract it and place the "src" folder in the root of your code
 - In any file (that doesn't go "out of the root folder", point to the location of the "module.js" file)
