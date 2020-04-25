@@ -16,8 +16,8 @@ Want to use require for multiple files and be able to easily get them out? Easy.
 
 #### Why isn't this an npm package?
 Multiple reasons;
-1. I don't want to use Node.JS for this forever, I plan to move it to pure JS.\
-2. I make constant updates that I don't want to be auto-updated because it could easily break the code.\
+1. I don't want to use Node.JS for this forever, I plan to move it to pure JS.
+2. I make constant updates that I don't want to be auto-updated because it could easily break the code.
 3. It's much simpler to just keep my changes here and just send in a new .zip whenever I have an update.
 
 #### What version of Node.JS does this use?
