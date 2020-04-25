@@ -2,9 +2,8 @@
 
 ## Questions
 ### What is this?
-Naomi's File Explorer (or nFX for short) is a system-friendly file explorer.\
+Naomi's File Explorer (or nFX for short) is a system-friendly and user-friendly file explorer.\
 It's purpose is to help the user automate the system's code more, as an All-In-One file explorer.\
-It's system-friendly, rather than user-friendly. Making it user-friendly is *your* job.\
 You can easily load multiple files, and exclude certain ones from a directory, and plans to do specific tasks with files you chose.\
 Want to make a directory tree in text? The plan is to make that so easy, it should be just a few lines of small input code.\
 Want to restore a version of a JavaScript file (that you saved the cache of)? Easy as `File.refresh ($file, $cache)`\
@@ -36,10 +35,10 @@ If you can understand it, you can probably also understand that messing with abo
 const nFX = require ("./src/pkg/nFX/module.js");
 // To load a single file, do the following:
 // Please do not use "." right now, it is not yet fully built in.
-/* const File = nFX.main ("~/path/to/file") */
-const config = nFX.main ("~/config.json") // Config exists in the root folder as "config.json"
+/* const File = nFX.main ("~/path/to/file"); */
+const config = nFX.main ("~/config.json"); // Config exists in the root folder as "config.json"
 // To use the loaded file, do the following:
-config.file () // Outputs the json file
+config.file (); // Outputs the json file
 // The folder class is still very much a wip though, but here are some examples
 const Commands = nFX.main ("~/Commands").loadChildren ({ whitelist: /\.js$/, endless: true });
 for (var i = 0; i < Commands.length; i++) {
@@ -50,4 +49,4 @@ for (var i = 0; i < Commands.length; i++) {
 - Load children ({ endless }) is a boolean that tells the system if it should load any and all sub-folders
 - Load children ({ blacklist }) is a regex that has priority over the whitelist
 - Load children ({ }, include) is an array that tells the system "If the child's name is this, then load it anyway."
-- Important! When using include, add "keep children" to the start of the array unless you want to automatically remove all previously loaded children.
+- Important! When using include, add "keep children" to the start of the array unless you want to remove all previously loaded children.
