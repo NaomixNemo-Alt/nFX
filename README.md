@@ -45,8 +45,8 @@ for (var i = 0; i < Commands.length; i++) {
   console.log (command.path.file.name);
 };
 ```
-- Load children ({ whitelist }) is a regex that is -required- to load children matching the said RegExp
-- Load children ({ endless }) is a boolean that tells the system if it should load any and all sub-folders
-- Load children ({ blacklist }) is a regex that has priority over the whitelist
-- Load children ({ }, include) is an array that tells the system "If the child's name is this, then load it anyway."
-- Important! When using include, add "keep children" to the start of the array unless you want to remove all previously loaded children.
+- Load children ({ whitelist }) is a RegExp that is -required- to load children matching the said RegExp.
+- Load children ({ endless }) is a Boolean that tells the system if it should load any and all sub-folders.
+- Load children ({ blacklist }) is a RegExp that has priority over the whitelist.
+- Load children ({ }, include) is an Array that tells the system "If the child's name is this, then load it anyway."
+- Important! When using include, add "keep children" to the start of the array unless you want to remove all loaded children (that fail to match the provided RegExp) in that folder from the cache.
