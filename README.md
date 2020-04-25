@@ -1,5 +1,6 @@
 # nFX
-**[Questions](https://github.com/NaomixNemo/nFX/tree/alpha#questions)\
+**[Releases](https://github.com/NaomixNemo/nFX/releases)\
+[Questions](https://github.com/NaomixNemo/nFX/tree/alpha#questions)\
 [How to use nFX](https://github.com/NaomixNemo/nFX/blob/alpha/README.md#how-to-use-nfx)**
 
 ## Questions
